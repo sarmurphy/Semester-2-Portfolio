@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    font-family: "DM Serif Text", serif;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 23px;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.sarah {
+    height: 350px;
+    width: 350px;
+    border-radius: 200px;
+    margin: 100px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.bio p {
+    font-size: 25px;
+    padding: 0px 150px 100px 150px;
+}
+
+blockquote {
+    padding: 100px;
+    font-size: 30px;
+}
+
+main img {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.project-desc {
+    padding: 30px 80px 80px 80px;
+}
+
+footer {
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.contact-box {
+    margin: 30px 150px 30px 150px;
+    padding: 50px;
+    border: 3px solid black;
+}
+
+.contact-box img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0px;
+}
+
+.contact-box p {
+    font-size: 20px;
+}
+
+.contact-box a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contact-box a:visited {
+    color: black;
+}
+
+.about-photos {
+    height: 250px;
+    width: 200px;
+    border-radius: 50px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-photos:hover {
+    transform: scale(1.1);
+}
+
+::selection {
+    background-color: rgba(188, 143, 143, 0.5);
+  }
+
+  .container {
+    padding: 35px 150px;
+    border-radius: 14px;
+    background-color: rgba(188, 143, 143, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result_images {
+    display: flex;
+    column-gap: 7rem;
+    align-items: center;
+  }
+
+  .container.start .user_result {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+  }
+
+  @keyframes userShake {
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+
+  .container.start .cpu_result {
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+  }
+
+  @keyframes cpuShake {
+    50% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .result_images img {
+    width: 100px;
+  }
+
+  .user_result img {
+    border: none;
+  }
+
+  .cpu_result img {
+    transform: rotate(-90deg) rotateY(180deg);
+    border: none;
+  }
+
+  .result {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-top: 1.5rem;
+  }
+
+  .option_image img {
+    width: 170px;
+    border: none;
+    padding: 0px 50px;
+  }
+
+  .option_images {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+  }
+
+  .container.start .option_images {
+    pointer-events: none;
+  }
+
+  .option_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .option_image:hover {
+    opacity: 1;
+  }
+
+  .option_image.active {
+    opacity: 1;
+  }
+
+   .option_image img {
+    pointer-events: none;
+  }
+
+  .option_image p {
+    color: black;
+    font-size: 25px;
+    margin-top: 1rem;
+    pointer-events: none;
+  }
+
+  .button {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(188, 143, 143, 0.502);
+    padding: 5px 7px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 75, 75, 0.322);
+  }
